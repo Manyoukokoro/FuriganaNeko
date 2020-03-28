@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FuriganaNeko</string>
+    <string name="to_furigana">to Furigana</string>
+    <string name="import_files">File Process</string>
+    <string name="scan">scan</string>
+    <string name="input_hint">Input your text with kanji here.</string>
+    <string name="file_process_get">reading file successful!</string>
+    <string name="file_process_put">creating file successful!</string>
+    <string name="output_with_furigana">Output with furigana</string>
+</resources>
