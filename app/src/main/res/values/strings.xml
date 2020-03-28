@@ -7,4 +7,5 @@
     <string name="file_process_get">reading file successful!</string>
     <string name="file_process_put">creating file successful!</string>
     <string name="output_with_furigana">Output with furigana</string>
+    <string name="nekotori">\@nekotori</string>
 </resources>

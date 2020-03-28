@@ -11,17 +11,26 @@
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:text="@string/app_name"
-            android:fontFamily="sans-serif-condensed-medium"
+            android:fontFamily="sans-serif-black"
             android:textColor="@color/White"
+            android:gravity="top"
             android:textSize="40sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity=""
+            android:text="@string/nekotori"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
     </LinearLayout>
     <LinearLayout
         android:id="@+id/inputTextLayout"
@@ -78,7 +87,7 @@
             <TextView
                 android:id="@+id/outputText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:textIsSelectable="true"
                 android:padding="10dp"
                 android:textColor="@color/white"
