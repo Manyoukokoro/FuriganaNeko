@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:text="@string/app_name"
             android:fontFamily="sans-serif-condensed-medium"
-            android:textColor="@color/DarkBlue"
+            android:textColor="@color/White"
             android:textSize="40sp"/>
     </LinearLayout>
     <LinearLayout
@@ -41,13 +41,13 @@
         android:layout_height="300dp"
         android:background="@color/white"
         android:hint="@string/input_hint"
-        android:textColor="@color/black"
+        android:textColor="@color/colorPrimary"
         android:textColorHint="@color/gray"
         android:scrollHorizontally="false"
         android:textSize="20sp"
         android:gravity="start"
         android:inputType="textMultiLine"
-        />
+        android:autofillHints="" />
     </LinearLayout>
 
     <LinearLayout
@@ -79,8 +79,9 @@
                 android:id="@+id/outputText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textIsSelectable="true"
                 android:padding="10dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="20sp" />
         </ScrollView>
     </LinearLayout>

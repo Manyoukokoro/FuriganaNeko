@@ -36,7 +36,7 @@ public class TextFuri extends NihongoBase implements Furigana {
         StringBuilder stringBuilder =new StringBuilder();
      //   List<String> ls = NihongoBase.splitWithKanji(original);
         for(Token tk:furigana){
-            if(tk.getSurface().equals(NihongoBase.toHinagana(tk.getReading())))
+            if(tk.getSurface().equals(NihongoBase.toHinagana(tk.getReading()))||tk.getReading().equals("*"))
                 stringBuilder.append(tk.getSurface());
             else
                 stringBuilder.append(tk.getSurface()).
@@ -46,11 +46,11 @@ public class TextFuri extends NihongoBase implements Furigana {
         }
         return stringBuilder.toString();
     }
-    private String getReadingKanji(String s){
+    /*private String getReadingKanji(String s){
         s=s.trim();
         List<Token> tks= tknz.tokenize(s);
         return tks.get(0).getReading();
 
-    }
+    }*/
 
 }
